@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover considered fashion, beautiful home decorations and signature perfumes at Trendora.">
+  <meta name="theme-color" content="#f7f4ee">
+  <title>Trendora — Find your everyday favourite</title>
+  <link rel="icon" href="assets/img/trendora-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/products.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="home">
+  <div class="announcement">A little something for every day <span>·</span> Free shipping on demo orders over ₹1,999</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Trendora home"><span class="brand-mark">T</span><span>TRENDORA</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a><a href="fashion.html">Fashion</a><a href="decorations.html">Decorations</a><a href="perfumes.html">Perfumes</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="site-search" type="search" placeholder="Search Trendora" aria-label="Search products"></label>
+      <button class="icon-button cart-trigger" id="cart-open" aria-label="Open shopping bag">Bag <span class="cart-count" id="cart-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">THE GOOD-FIND EDIT</p>
+        <h1>Everyday things.<br><em>Extraordinary</em> feeling.</h1>
+        <p class="hero-text">A fresh edit of wearable favourites, thoughtful home details and scents worth remembering.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#shop-by-mood">Explore the edit <span>↗</span></a><span class="hero-note">Curated with a little more care.</span></div>
+        <div class="hero-stats"><div><strong>03</strong><span>Collections</span></div><div><strong>01</strong><span>Good mood</span></div><div><strong>∞</strong><span>Ways to style</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=85" alt="Curated neutral fashion pieces on a rack">
+        <div class="hero-sticker"><span>THE</span><strong>NEW<br>MOOD</strong><span>VOL. 01 / 26</span></div>
+        <div class="hero-caption">A considered collection for your everyday.</div>
+      </div>
+    </section>
+
+    <section class="wrap section-block" id="shop-by-mood">
+      <div class="section-heading"><div><p class="eyebrow">SHOP BY MOOD</p><h2>Find your kind of lovely.</h2></div><p class="section-aside">Three little worlds.<br>One place to discover.</p></div>
+      <div class="category-tiles">
+        <a class="category-tile tile-fashion" href="fashion.html"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Modern fashion styling"><span class="tile-index">01 / STYLE</span><span class="tile-title">Fashion <b>↗</b></span><span class="tile-sub">Pieces that feel like you</span></a>
+        <a class="category-tile tile-decor" href="decorations.html"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Warm contemporary home interior"><span class="tile-index">02 / SPACE</span><span class="tile-title">Decorations <b>↗</b></span><span class="tile-sub">Make room for beautiful</span></a>
+        <a class="category-tile tile-perfume" href="perfumes.html"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85" alt="Elegant perfume bottle"><span class="tile-index">03 / SCENT</span><span class="tile-title">Perfumes <b>↗</b></span><span class="tile-sub">Leave a lovely impression</span></a>
+      </div>
+    </section>
+
+    <section class="featured-band">
+      <div class="wrap featured-inner"><div><p class="eyebrow">A NOTE FROM TRENDORA</p><h2>Good taste is<br><em>in the details.</em></h2></div><p>From the outfit you reach for twice a week to the little object that makes a room feel finished, discover pieces made to be part of your story.</p><a class="text-link" href="fashion.html">Discover the collections ↗</a></div>
+    </section>
+
+    <section class="wrap section-block product-section">
+      <div class="section-heading"><div><p class="eyebrow">THE CURRENT FAVOURITES</p><h2>Worth a closer look.</h2></div><a class="text-link" href="fashion.html">Shop all collections ↗</a></div>
+      <div class="product-grid" id="featured-products" aria-live="polite"></div>
+    </section>
+
+    <section class="newsletter wrap"><div><p class="eyebrow">A GOOD THING IN YOUR INBOX</p><h2>Stay in the know.</h2><p>New finds, styling notes and little moments of inspiration.</p></div><form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Sign me up ↗</button><small id="newsletter-message">Demo only — no email is stored or sent.</small></form></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-top"><a class="brand brand-footer" href="index.html"><span class="brand-mark">T</span><span>TRENDORA</span></a><p>Find your everyday favourite.</p><div class="footer-links"><a href="fashion.html">Fashion</a><a href="decorations.html">Decorations</a><a href="perfumes.html">Perfumes</a><a href="PAYMENT_SETUP.md">Payment setup guide</a></div></div><div class="wrap footer-bottom"><span>© <span data-year></span> Trendora. Demo storefront.</span><span>Made for discovering good things.</span></div></footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="cart-close" aria-label="Close shopping bag">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="drawer-bottom"><div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p class="shipping-note">Shipping and taxes are calculated at checkout.</p><a class="button button-dark button-full" id="checkout-link" href="checkout.html">Continue to checkout <span>↗</span></a><p class="demo-note">Demo store: no real payment is collected.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
